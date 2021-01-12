@@ -1,3 +1,3 @@
 .idea/
 venv/
-chapter12/__pycache__/
+*/__pycache__/*

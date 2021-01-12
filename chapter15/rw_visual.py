@@ -7,7 +7,8 @@ while True:
     x_values = rw.x_values
     y_values = rw.y_values
     point_numbers = list(range(rw.num_points))
-    plt.scatter(x_values, y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=15)
+    plt.figure(figsize=(10, 6))
+    plt.scatter(x_values, y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
     # 突出起点和终点
     plt.scatter(0, 0, c='green', edgecolors='none', s=100)
     plt.scatter(x_values[-1], y_values[-1], c='red', edgecolors='none', s=100)
